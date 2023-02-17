@@ -1,18 +1,11 @@
-/**
- * Project Untitled
- */
-
-
-#ifndef _PLACE_H
-#define _PLACE_H
+#pragma once
+#include <vector>
 
 class Place {
-public: 
-    bool free;
-    vector<char> n_place;
-    bool theres_a_car;
-    
-bool detect();
-};
+public:
+  bool free;
+  std::vector<char> n_place;
+  bool theres_a_car;
 
-#endif //_PLACE_H
+  bool detect();
+};
