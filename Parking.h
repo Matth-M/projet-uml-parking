@@ -9,9 +9,8 @@ public:
   Parking(int total_places);
   void print_n_places(int occupied_places, int total_places);
 
-  std::vector<std::string> authorized_plate(std::string plate,
-                                            std::vector<User> list_user);
-  std::vector<int> authorized_badge(std::vector<User> list_user, int badge);
+  bool authorized_plate(std::string plate) const;
+  bool authorized_badge(int badge) const;
 
 private:
   int total_places;

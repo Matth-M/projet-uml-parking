@@ -7,9 +7,22 @@ Parking::Parking(int total_places) {
 }
 
 void Parking::print_n_places(int occupied_places, int total_places) { return; }
-vector<string> Parking::authorized_plate(string plate, vector<User> list_user) {
-    return null;
+bool Parking::authorized_plate(std::string plate) const {
+  std::vector<User>::iterator it;
+  for (int i = 0; i < list_users.size(); i++) {
+    if (list_users[i].get_plate() == plate) {
+      return true;
+    }
+  }
+  return false;
 }
-vector<int> Parking::authorized_badge(vector<User> list_user, int badge) {
-    return null;
+
+bool Parking::authorized_badge(int badge) const {
+  std::vector<User>::iterator it;
+  for (int i = 0; i < list_users.size(); i++) {
+    if (list_users[i].get_badge() == badge) {
+      return true;
+    }
+  }
+  return false;
 }
