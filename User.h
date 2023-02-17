@@ -10,5 +10,6 @@ private:
 public:
   User(std::string plate, int n_badge);
   int get_badge() const;
+  std::string get_plate() const;
   bool is_authorized() const;
 };

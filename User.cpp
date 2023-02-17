@@ -7,4 +7,5 @@ User::User(std::string plate, int n_badge) {
 }
 
 int User::get_badge() const { return this->n_badge; }
-bool User::is_authorized() const;
+bool User::is_authorized() const { return authorized; }
+std::string User::get_plate() const { return plate; }
