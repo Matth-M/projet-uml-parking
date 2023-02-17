@@ -9,6 +9,7 @@ private:
   bool theres_a_car;
 
 public:
+  Counter(std::string n_counter);
   void lower_barrier();
   void raise_barrier();
   void read_plate();

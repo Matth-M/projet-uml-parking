@@ -1,5 +1,8 @@
 #include "Counter.h"
-
+Counter::Counter(std::string n_counter) {
+  this->n_counter = n_counter;
+  this->theres_a_car = false;
+}
 void Counter::lower_barrier() {}
 
 void Counter::raise_barrier() {}
