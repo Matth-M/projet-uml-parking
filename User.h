@@ -1,16 +1,12 @@
-/**
- * Project Untitled
- */
-
-
-#ifndef _USER_H
-#define _USER_H
+#pragma once
+#include <string>
 
 class User {
-public: 
-    int plate;
-    int n_badge;
-    bool authorized;
-};
+private:
+  std::string plate;
+  int n_badge;
+  bool authorized;
 
-#endif //_USER_H
+public:
+  User(std::string plate, int n_badge);
+};

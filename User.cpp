@@ -1,10 +1,5 @@
-/**
- * Project Untitled
- */
-
-
 #include "User.h"
-
-/**
- * User implementation
- */
+User::User(std::string plate, int n_badge) {
+  this->plate = plate;
+  this->n_badge = n_badge;
+}
