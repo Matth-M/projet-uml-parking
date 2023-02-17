@@ -8,8 +8,9 @@ class Parking {
 public:
   void print_n_places(int occupied_places, int total_places);
 
-  vector<string> authorized_plate(string plate, vector<User> list_user);
-  vector<int> authorized_badge(vector<User> list_user, int badge);
+  std::vector<std::string> authorized_plate(std::string plate,
+                                            std::vector<User> list_user);
+  std::vector<int> authorized_badge(std::vector<User> list_user, int badge);
 
 private:
   int total_places;

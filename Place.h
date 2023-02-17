@@ -1,10 +1,10 @@
 #pragma once
-#include <vector>
+#include <string>
 
 class Place {
-public:
+private:
   bool free;
-  std::vector<char> n_place;
+  std::string n_place;
   bool theres_a_car;
 
   bool detect();

@@ -1,10 +1,11 @@
 #pragma once
 #include "User.h"
+#include <string>
 #include <vector>
 
 class Counter {
 private:
-  std::vector<char> n_counter;
+  std::string n_counter;
   bool theres_a_car;
 
 public:
