@@ -8,7 +8,6 @@ Parking::Parking(int total_places) {
 
 void Parking::print_n_places(int occupied_places, int total_places) { return; }
 bool Parking::authorized_plate(std::string plate) const {
-  std::vector<User>::iterator it;
   for (int i = 0; i < list_users.size(); i++) {
     if (list_users[i].get_plate() == plate) {
       return true;
@@ -18,7 +17,6 @@ bool Parking::authorized_plate(std::string plate) const {
 }
 
 bool Parking::authorized_badge(int badge) const {
-  std::vector<User>::iterator it;
   for (int i = 0; i < list_users.size(); i++) {
     if (list_users[i].get_badge() == badge) {
       return true;
