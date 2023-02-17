@@ -19,5 +19,4 @@ private:
   std::vector<Place> list_places;
   std::vector<Counter> list_counters;
   std::vector<User> list_users;
-  bool capt_entry;
 };
