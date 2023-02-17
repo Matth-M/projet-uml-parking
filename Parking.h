@@ -6,6 +6,7 @@
 
 class Parking {
 public:
+  Parking(int total_places);
   void print_n_places(int occupied_places, int total_places);
 
   std::vector<std::string> authorized_plate(std::string plate,
