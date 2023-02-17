@@ -14,7 +14,7 @@ void Counter::read_badge() {}
 void Counter::print_accepted() {}
 
 void Counter::print_rejected() {}
-bool Counter::detect() { return false; }
+bool Counter::detect() { return theres_a_car; }
 
 void Counter::add_present_user(std::vector<User> list_of_present_cars) {}
 
