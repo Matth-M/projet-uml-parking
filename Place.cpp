@@ -1,18 +1,5 @@
-/**
- * Project Untitled
- */
-
-
 #include "Place.h"
 
-/**
- * Place implementation
- */
+Place::Place(std::string n_place) { this->n_place = n_place; }
 
-
-/**
- * @return bool
- */
-bool Place::detect() {
-    return false;
-}
+bool Place::detect() { return free; }
