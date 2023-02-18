@@ -8,7 +8,7 @@ Parking::Parking(int nb_places) {
   occupied_places = 0;
 }
 
-void Parking::print_n_places(int occupied_places, int total_places) {
+void Parking::print_n_places() {
   int number = total_places - occupied_places;
   // La console fait office de l'ecran du parking
   std::cout << "PLACES DISPONIBLES:\t" << number << std::endl;

@@ -7,6 +7,7 @@ int main() {
   // vehicule.
   int timer = 0;
   Parking parking(TOTAL_PLACES);
+  parking.print_n_places();
 
   return 0;
 }
