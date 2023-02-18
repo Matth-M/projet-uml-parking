@@ -1,6 +1,7 @@
 #include "./Counter.h"
 #include "Parking.h"
 #include "sensor.h"
+#include <iostream>
 
 Counter::Counter(std::string n_counter) {
   this->n_counter = n_counter;
@@ -14,7 +15,7 @@ void Counter::read_plate() {}
 
 void Counter::read_badge() {}
 
-void Counter::print_accepted() {}
+void Counter::print_accepted() { std::cout << "BIENVENUE!" << std::endl; }
 
 void Counter::print_rejected() {}
 bool Counter::detect() {
