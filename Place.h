@@ -10,5 +10,3 @@ public:
   bool detect();
   Place(std::string n_place);
 };
-
-bool sensorDetectsACar();

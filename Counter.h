@@ -1,4 +1,5 @@
 #pragma once
+#include "Parking.h"
 #include "User.h"
 #include <string>
 #include <vector>
@@ -17,8 +18,6 @@ public:
   void print_accepted();
   void print_rejected();
   bool detect();
-  void add_present_user(std::vector<User> list_of_present_cars);
-
-  void remove_car_present();
-  void remove_present_car(std::vector<User> list_of_present_cars);
+  void add_present_user(Parking p, User u);
+  void remove_present_car(Parking p, User u);
 };

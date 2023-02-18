@@ -7,8 +7,10 @@
 class Parking {
 public:
   Parking(int total_places);
-  void print_n_places(int occupied_places, int total_places);
+  void print_n_places();
 
+  void remove_present_user(User u);
+  void add_present_user(User u);
   bool authorized_plate(std::string plate) const;
   bool authorized_badge(int badge) const;
 

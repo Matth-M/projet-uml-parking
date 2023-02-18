@@ -1,5 +1,7 @@
-#include "Counter.h"
+#include "./Counter.h"
+#include "Parking.h"
 #include "sensor.h"
+
 Counter::Counter(std::string n_counter) {
   this->n_counter = n_counter;
   this->theres_a_car = false;
@@ -23,7 +25,5 @@ bool Counter::detect() {
   }
   return theres_a_car;
 }
-void Counter::add_present_user(std::vector<User> list_of_present_cars) {}
-
-void Counter::remove_car_present() {}
-void Counter::remove_present_car(std::vector<User> list_of_present_cars) {}
+void Counter::add_present_user(Parking p, User u) {}
+void Counter::remove_present_car(Parking p, User u) {}
