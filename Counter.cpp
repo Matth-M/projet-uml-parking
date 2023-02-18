@@ -17,7 +17,9 @@ void Counter::read_badge() {}
 
 void Counter::print_accepted() { std::cout << "BIENVENUE!" << std::endl; }
 
-void Counter::print_rejected() {}
+void Counter::print_rejected() {
+  std::cout << "VOUS N'ETES PAS AUTORISE(E) A RENTRER :(" << std::endl;
+}
 bool Counter::detect() {
   if (sensorDetectsACar()) {
     theres_a_car = false;
