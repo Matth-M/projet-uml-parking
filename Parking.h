@@ -4,6 +4,8 @@
 #include "./User.h"
 #include <vector>
 
+class Counter;
+
 class Parking {
 public:
   Parking(int total_places);

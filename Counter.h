@@ -1,8 +1,10 @@
 #pragma once
-#include "Parking.h"
+#include "./Parking.h"
 #include "User.h"
 #include <string>
 #include <vector>
+
+class Parking;
 
 class Counter {
 private:
