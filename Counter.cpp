@@ -28,5 +28,8 @@ bool Counter::detect() {
   }
   return theres_a_car;
 }
-void Counter::add_present_user(Parking p, User u) {}
-void Counter::remove_present_car(Parking p, User u) {}
+
+void Counter::add_present_user(Parking p, User u) { p.add_present_user(u); }
+void Counter::remove_present_car(Parking p, User u) {
+  p.remove_present_user(u);
+}
