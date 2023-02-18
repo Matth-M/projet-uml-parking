@@ -2,9 +2,10 @@
 #include "User.h"
 #include <iostream>
 #include <vector>
-Parking::Parking(int total_places) {
-  this->total_places = total_places;
-  this->occupied_places = 0;
+
+Parking::Parking(int nb_places) {
+  this->total_places = nb_places;
+  occupied_places = 0;
 }
 
 void Parking::print_n_places(int occupied_places, int total_places) {
