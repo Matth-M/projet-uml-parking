@@ -1,4 +1,5 @@
 #include "Counter.h"
+#include "sensor.h"
 Counter::Counter(std::string n_counter) {
   this->n_counter = n_counter;
   this->theres_a_car = false;
@@ -14,8 +15,14 @@ void Counter::read_badge() {}
 void Counter::print_accepted() {}
 
 void Counter::print_rejected() {}
-bool Counter::detect() { return theres_a_car; }
-
+bool Counter::detect() {
+  if (sensorDetectsACar()) {
+    theres_a_car = false;
+  } else {
+    theres_a_car = true;
+  }
+  return theres_a_car;
+}
 void Counter::add_present_user(std::vector<User> list_of_present_cars) {}
 
 void Counter::remove_car_present() {}
