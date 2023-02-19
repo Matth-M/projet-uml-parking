@@ -19,7 +19,7 @@ public:
 private:
   int total_places;
   int occupied_places;
-  std::vector<User> list_of_present_cars;
+  std::vector<User> list_of_present_users;
   std::vector<Place> list_places;
   std::vector<Counter> list_counters;
   std::vector<User> list_users;

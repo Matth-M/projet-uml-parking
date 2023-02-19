@@ -9,7 +9,7 @@ class Parking;
 class Counter {
 private:
   std::string n_counter;
-  bool theres_a_car;
+  bool theres_a_user;
 
 public:
   Counter(std::string n_counter);
@@ -21,5 +21,5 @@ public:
   void print_rejected();
   bool detect();
   void add_present_user(Parking p, User u);
-  void remove_present_car(Parking p, User u);
+  void remove_present_user(Parking p, User u);
 };
